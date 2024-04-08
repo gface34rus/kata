@@ -70,7 +70,8 @@ public class Calc {
 
             //if (number1 < 0 && number2 < 0) {
             //  result = 0;
-            if ((number1 < 0 || number2 < 0) && (number1 > 10 || number2 > 10)) {
+           // if ((number1 < 0 || number2 < 0) && (number1 > 10 || number2 > 10)) {
+             if (number1 < 0 || number2 < 0){
                 throw new IllegalArgumentException("вводить только положительные числа от I до X");
             } else {
                 if (operation == '-' && number1 < number2) {
